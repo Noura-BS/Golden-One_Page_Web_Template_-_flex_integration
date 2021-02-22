@@ -1,0 +1,87 @@
+/* meme titres sous titres, police headings centrer*/
+@font-face {
+    font-family: 'Wisdom Script Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Wisdom Script Regular'), url('Wisdom Script AJ.woff') format('woff');
+    }
+
+
+
+/*---------VARIABLES----------*/
+
+
+:root {
+    --font : 'Wisdom Script Regular', sans-serif;
+    --font-headings :"Wisdom Script Regular", sans-serif;
+    --font-style : normal;
+    --font-weight: normal;
+    --dark : rgb(37, 37, 37);
+    --light : white;
+    --black : black;
+    --orange : orange;
+}
+
+
+
+/*----------TEXT FORMAT-------------*/
+html, body {
+    font-family: var(--font);
+    font-size:16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-light {
+    background-color:var(--light);
+}
+
+/*-----------faire police taille h2 h3 h4--------*/
+
+.title {
+    text-align:center;
+}
+
+.subtitle {
+    text-align:center;
+}
+
+
+
+/*------------BLOCS------------------*/
+
+
+
+/*--HEADER--*/
+
+header {
+    background-image: url("../img/bg_header.png");
+    background-size: cover;
+    width:100%;
+}
+
+#logo {
+    color:var(--orange);
+}
+
+
+
+.title {
+    text-align: center;
+}
+
+/*NAV---*/
+
+
+nav {
+    display:flex
+}
+
+nav ul {
+    display:inline-block;
+    width: 100%;
+
+}
+
+
