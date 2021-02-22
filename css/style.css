@@ -20,22 +20,32 @@
     --light : white;
     --black : black;
     --orange : orange;
+    --grey : grey;
 }
 
 
 
 /*----------TEXT FORMAT-------------*/
 html, body {
+    background-color: var(--black);
     font-family: var(--font);
     font-size:16px;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin-right:50px;
+    margin-left: 50px;
+    padding:0;
 }
 
 .bg-light {
     background-color:var(--light);
 }
+
+p {
+    color: var(--light);
+
+}
+
+
 
 /*-----------faire police taille h2 h3 h4--------*/
 
@@ -57,12 +67,17 @@ html, body {
 
 header {
     background-image: url("../img/bg_header.png");
+    filter:brightness(50%);
     background-size: cover;
     width:100%;
+    height: 625px;
+    margin:0;
+    padding:0;
 }
 
 #logo {
     color:var(--orange);
+    position:absolute;
 }
 
 
@@ -73,15 +88,112 @@ header {
 
 /*NAV---*/
 
-
-nav {
-    display:flex
-}
-
 nav ul {
-    display:inline-block;
-    width: 100%;
-
+    width: 80;
+    list-style-type: none;
+    display:flex;
+    justify-content:space-around;
 }
 
 
+nav p {
+    width: 100%;
+    text-align: center;
+}
+
+/*-----SECTION SERVICES---*/
+
+.flex {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+
+
+/*--------PORTFOLIO---------*/
+
+#portfolio .flex div {
+    justify-content: space-around;
+    flex-wrap: wrap-reverse; 
+}
+
+
+/*------EQUIPE----*/
+
+#team {
+    height: 500px;
+}
+
+..portrait div {
+    width:60px;
+    height:40px;
+    border-radius:50%;
+    background-color: black;
+
+}
+
+.facebook {
+    background-image: url("../img/icons/facebook.png");
+}
+
+.twitter {
+    background-image: url("../img/icons/Twitter.png");
+}
+
+.google {
+    background-image: url("../img/icons/Google+.png");
+}
+
+.pinterest {
+    background-image: url("../img/icons/Pinterest.png");
+}
+
+#team p {
+    text-align:center;
+ }
+
+
+/*------div photo-----*/
+
+.photo {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/*------CONTACT US-------*/
+
+#form {
+    display:block;
+    background-image: url("../img/map_contact.png");
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    margin:auto;
+    overflow:hidden;
+}
+
+
+
+
+/*----------FOOTER--------*/
+
+.social {
+    display:flex;
+}
+
+
+.twitter {
+    background-image: url("../img/icons/Twitter.png");
+}
+.facebook {
+    background-image:url("../img/icons/facebook.png");
+}
+.pinterest {
+    background-image:url("../img/icons/Pinterest.png");
+} 
+.google {
+    background-image: url("../img/icons/Google+.png");
+}
